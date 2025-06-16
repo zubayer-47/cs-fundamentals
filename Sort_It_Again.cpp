@@ -12,11 +12,24 @@ public:
     int eng_marks;
 };
 
-bool comp(Student s1, Student s2) {
-    if (((s1.math_marks + s1.eng_marks) == (s2.math_marks + s2.eng_marks)) && (s1.id > s2.id)) {
-        return false;
-    } else if ((s1.math_marks + s1.eng_marks) < (s2.math_marks + s2.eng_marks))
-    {
+bool comp(Student s1, Student s2)
+{
+    // eng marks are same
+    if (s1.eng_marks == s2.eng_marks) {
+        // math marks are same
+        if (s1.math_marks == s2.math_marks) {
+            // then, sort by id in ascending order
+            if (s1.id > s2.id) {
+                return false;
+            }
+
+        // if it's not same, sort decending order by math_marks
+        } else if (s1.math_marks < s2.math_marks) {
+            return false;
+        }
+
+    // if eng marks are not same then sort decending order by eng_marks
+    } else if (s1.eng_marks < s2.eng_marks) {
         return false;
     }
 
@@ -45,7 +58,7 @@ int main()
     while (i != n)
     {
         cout << students[i].nm << " " << students[i].cls << " " << students[i].s << " " << students[i].id << " " << students[i].math_marks << " " << students[i].eng_marks << endl;
-
+        
         i++;
     }
 

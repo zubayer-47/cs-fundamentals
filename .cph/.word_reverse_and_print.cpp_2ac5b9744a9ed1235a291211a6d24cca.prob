@@ -1,0 +1,1 @@
+{"name":"Local: word_reverse_and_print","url":"/workspaces/cs-fundamentals/word_reverse_and_print.cpp","tests":[{"id":1748844696304,"input":"I Love You","output":"I evoL uoY"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/word_reverse_and_print.cpp","group":"local","local":true}
