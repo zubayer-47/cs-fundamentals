@@ -1,30 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
-
     cin >> n;
 
-    int arr[n];
+    vector<int> v(n);
 
-    for (int i = 0; i < n; i++)
+    while (--n+1)
     {
-        cin >> arr[i];
+        int value;
+        cin >> value;
+
+        v[n] = value;
     }
-
-    for (int i = 0; i < n; i++)
+    
+    for (int i = 0; i < v.size(); i++)
     {
-        for (int j = i + 1; j < n; j++)
-        {
-            swap(arr[i], arr[j]);
-        }
-    }
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
+        cout << v[i] << " ";
     }
 
     return 0;

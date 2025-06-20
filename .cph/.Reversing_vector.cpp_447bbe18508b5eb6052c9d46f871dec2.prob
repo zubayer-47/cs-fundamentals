@@ -1,0 +1,1 @@
+{"name":"Local: Reversing_vector","url":"/workspaces/cs-fundamentals/Reversing_vector.cpp","tests":[{"id":1750418827685,"input":"5\n1 -2 0 3 4","output":"1 2 0 1 1 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/Reversing_vector.cpp","group":"local","local":true}
