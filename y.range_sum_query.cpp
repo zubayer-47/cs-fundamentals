@@ -1,17 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int calculateSum(vector<int>::iterator begin, vector<int>::iterator end) {
-    if (begin == end) {
-        return *end;
-    }
-
-
-    int res = calculateSum(begin + 1, end);
-
-    return *begin + res;
-}
-
 int main()
 {
     int n, q;
@@ -24,17 +13,28 @@ int main()
         cin >> v[i];
     }
 
+    vector<int> p(n);
+
+    for (int i = 0; i < n; i++)
+    {
+        int sum = p[i - 1] + v[i];
+
+        p[i] = sum;
+    }
+
     for (int i = 0; i < q; i++)
     {
-        int l, r, sum =0;
+        int l, r;
 
         cin >> l >> r;
 
-        vector<int> p(v.begin() + l - 1, v.begin() + r);
+        int res = p[r - 1];
 
-        sum = calculateSum(p.begin(), p.end()-1);
+        if (l != 1) {
+            res -= p[l - 2];
+        }
 
-        cout << sum << endl;
+        cout << res << endl;
     }
 
     return 0;
