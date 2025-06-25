@@ -1,0 +1,1 @@
+{"name":"Local: running-sum","url":"/workspaces/cs-fundamentals/running-sum.cpp","tests":[{"id":1750822589019,"input":"4\n1 2 3 4","output":"1 3 6 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/running-sum.cpp","group":"local","local":true}

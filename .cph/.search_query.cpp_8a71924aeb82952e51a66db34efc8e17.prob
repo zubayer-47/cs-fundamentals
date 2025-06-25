@@ -1,0 +1,1 @@
+{"name":"Local: search_query","url":"/workspaces/cs-fundamentals/search_query.cpp","tests":[{"id":1750823493200,"input":"5\n6 3 2 1 8\n4\n1\n5\n2\n9","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/search_query.cpp","group":"local","local":true}
