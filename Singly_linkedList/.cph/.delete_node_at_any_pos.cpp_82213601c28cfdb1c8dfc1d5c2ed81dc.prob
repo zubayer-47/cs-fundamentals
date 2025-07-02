@@ -1,0 +1,1 @@
+{"name":"Local: delete_node_at_any_pos","url":"/workspaces/cs-fundamentals/linkedList/delete_node_at_any_pos.cpp","tests":[{"id":1751435015799,"input":"10 20 30 50 -1\n2","output":"10 20 50"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/linkedList/delete_node_at_any_pos.cpp","group":"local","local":true}

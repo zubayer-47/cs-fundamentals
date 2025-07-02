@@ -1,0 +1,1 @@
+{"name":"Local: linkedlist_reverse_print","url":"/workspaces/cs-fundamentals/linkedList/linkedlist_reverse_print.cpp","tests":[{"id":1751433496963,"input":"10 20 30","output":"30 20 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/linkedList/linkedlist_reverse_print.cpp","group":"local","local":true}
