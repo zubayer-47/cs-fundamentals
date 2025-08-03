@@ -55,49 +55,62 @@ Node *binary_tree_input()
     return root;
 }
 
-void print_outer_left_tree(Node *root, vector<int> &left)
+void print_outer_left_tree(Node *root, vector<int> &v)
 {
     if (!root->left && !root->right)
     {
-        left.push_back(root->val);
+        v.push_back(root->val);
         return;
     }
-    
-    print_outer_left_tree(root->left, left);
-    left.push_back(root->val);
+
+    if (root->left)
+        print_outer_left_tree(root->left, v);
+    else if (root->right)
+        print_outer_left_tree(root->right, v);
+
+    v.push_back(root->val);
 }
 
-void print_outer_right_tree(Node *root, vector<int> &right)
+void print_outer_right_tree(Node *root, vector<int> &v)
 {
     if (!root->left && !root->right)
     {
-        right.push_back(root->val);
+        v.push_back(root->val);
         return;
     }
 
-    right.push_back(root->val);
+    if (root->right)
+    {
+        print_outer_right_tree(root->right, v);
+    }
+    else if (root->left)
+        print_outer_right_tree(root->left, v);
 
-    print_outer_right_tree(root->right, right);
+    v.push_back(root->val);
 }
 
 int main()
 {
     Node *root = binary_tree_input();
-
     vector<int> left, right;
 
-    print_outer_left_tree(root, left);
-    print_outer_right_tree(root, right);
+    if (root->left)
+        print_outer_left_tree(root->left, left);
+    if (root->right)
+        print_outer_right_tree(root->right, right);
 
-    for (int l:left) {
-        cout << l << " ";
+    for (int v : left)
+    {
+        cout << v << " ";
     }
 
-    for (int i = 0; i < right.size(); i++)
-    {
-        if (i==0) continue;
+    cout << root->val << " ";
 
-        cout << right[i] << " ";
+    reverse(right.begin(), right.end());
+
+    for (int v : right)
+    {
+        cout << v << " ";
     }
 
     return 0;
