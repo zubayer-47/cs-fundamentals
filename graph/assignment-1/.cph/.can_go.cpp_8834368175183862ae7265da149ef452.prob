@@ -1,0 +1,1 @@
+{"name":"Local: can_go","url":"/workspaces/cs-fundamentals/graph/assignment-1/can_go.cpp","tests":[{"id":1755868858587,"input":"5 8\n########\n#.A#...#\n#.##.#B#\n#......#\n########","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/cs-fundamentals/graph/assignment-1/can_go.cpp","group":"local","local":true}
